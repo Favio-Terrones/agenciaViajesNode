@@ -1,0 +1,36 @@
+extends ./layout/index
+//- p Desde Pug 
+//- p= viajes    aca se le pasa la variable que viene de JS
+
+//- p #{viajes}   segunda forma de pasarle una variable de JS
+
+//- img(src="img/cupon.jpg")
+block contenido
+        main.container.mt-5
+           .row
+               .col-md-5
+                  img(src="img/nosotros.jpg", alt="nosotros-img",class="img-fluid")
+               .col-md-7
+                   h1 #{pagina}
+                   blockquote  ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis, diam elementum tristique ultrices, nisl erat semper elit, vitae sollicitudin nulla lacus non dolor. Integer tristique non orci quis rutrum. Vivamus dictum sed nisl in laoreet. Integer dui est, vulputate in ultrices vel, fringilla id nisi. Pellentesque dapibus orci in congue vehicula. Vestibulum fringilla sem tellus, vel commodo dui auctor at. In vitae condimentum enim.
+                   p consequat posuere lorem. Aliquam nec elit sit amet massa semper pellentesque a sit amet nisl. Proin commodo consectetur leo sagittis vulputate. Phasellus malesuada nec est sit amet hendrerit. Nullam lacinia consectetur sem id hendrerit. Nunc a cursus leo. Nulla a venenatis magna. Pellentesque erat velit, blandit quis pretium non, varius a sapien. Nunc leo libero, tempor at ullamcorper sed, vestibulum in diam. Duis vel feugiat neque, viverra pharetra tortor.
+
+                   p vitae ipsum et nunc efficitur sollicitudin a nec orci. Duis quis tempus turpis. Nam imperdiet sem tincidunt ipsum condimentum elementum. Sed id molestie risus. Ut accumsan turpis at felis maximus, eu faucibus ante lacinia. Quisque vulputate lorem at turpis bibendum, eget finibus elit lobortis.
+
+        .listado-iconos
+             .container.mt-5.py-5.text-center
+                .row
+                   .col-md-4
+                       img(src="img/icono_seguridad.svg", alt="icono-seguridad",class="img-fluid mb-4")
+                       h2.mb-4 Seguridad
+                       p vitae ipsum et nunc efficitur sollicitudin a nec orci. Duis quis tempus turpis. Nam imperdiet sem tincidunt ipsum condimentum elementum. Sed id molestie risus. Ut accumsan turpis at felis maximus, eu faucibus ante lacinia.
+
+                   .col-md-4
+                       img(src="img/icono_destinos.svg", alt="icono-destinos",class="img-fluid mb-4")
+                       h2.mb-4 Mejores Destinos
+                       p vitae ipsum et nunc efficitur sollicitudin a nec orci. Duis quis tempus turpis. Nam imperdiet sem tincidunt ipsum condimentum elementum. Sed id molestie risus. Ut accumsan turpis at felis maximus, eu faucibus ante lacinia.
+
+                   .col-md-4
+                       img(src="img/icono_precios.svg", alt="icono-precios",class="img-fluid mb-4")
+                       h2.mb-4 Los Mejores Precios
+                       p vitae ipsum et nunc efficitur sollicitudin a nec orci. Duis quis tempus turpis. Nam imperdiet sem tincidunt ipsum condimentum elementum. Sed id molestie risus. Ut accumsan turpis at felis maximus, eu faucibus ante lacinia.
